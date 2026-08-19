@@ -1,14 +1,50 @@
-# Welcome to your Lovable project
+# Verax Properties Hub
+
+necesito una pagina web, responsiva, profesional basa en el diseño de las imágenes adjuntas la información de sobre la web es sobre una inmobiliaria la cual se encargan de ventas, alquileres y otros servicios en el rama de bines y raíces esta es la información de la empresa:  Inmobiliaria Verax C.A.1. Ficha Corporativa, Legal y Datos de ContactoRazón Social Registrada: Inmobiliaria Verax Se Alquila y Vende, C.A. / Inmobiliaria Verax, C.A. (Diario de Los Andes).Representante Legal / Presidencia: Gerardo Antonio Vera Parra (C.I. V-17.812.755) (Diario de Los Andes).Dirección de Sede Física: Carrera 20, entre Pasaje Acueducto y Calle 11, Edificio N° 10-152, Piso 1, Sector Barrio Obrero, San Cristóbal, Estado Táchira, Venezuela (Código Postal 5001) (Cylex Venezuela, Infoguia).Teléfonos y Enlaces de Comunicación:Teléfono fijo oficina: 0276-3533561 (Cylex Venezuela).Canal Móvil y WhatsApp Business: +58 276-4259480 / +58 424-... (Cylex Venezuela).Horarios de Operación: Lunes a viernes de 08:00 a 17:30 (Cylex Venezuela).Trayectoria Reportada: 19 años de servicio continuado en el mercado inmobiliario del estado Táchira (Perfil de Instagram @inmobiliaria_verax).2. Modelo de Negocio y Portafolio de Servicios                           INMOBILIARIA VERAX C.A.
+                                      │
+     ┌──────────────────┬─────────────┴─────────────┬──────────────────┐
+     ▼                  ▼                           ▼                  ▼
+Compra / Venta     Arrendamiento             Administración      Red de Asesores
+Residencial &      Comercial &              Integral para       y Captadores
+Comercial          Industrial               Propietarios        Comerciales
+Intermediación en Compraventa Residencial:Comercialización de casas unifamiliares, townhouses, condominios horizontales y apartamentos de media y alta gama (penthouses dúplex).Verificación de estatus legal (títulos supletorios, régimen de propiedad horizontal, solvencias municipales y registros).Arrendamiento Residencial y Comercial:Estructuración de contratos de arrendamiento con esquemas comunes en la plaza local (cánones en USD, depósitos de garantía, meses de adelanto y honorarios administrativos de redacción de contrato) (Publicaciones de Inmobiliaria Verax).Sector Industrial, Logístico y Terrenos:Galpones industriales con portones reforzados y accesibilidad para vehículos de carga pesada / gandolas (zonas periurbanas y comerciales).Venta de parcelas residenciales, terrenos comerciales y propiedades campestres.Administración de Inmuebles (Especial para Residentes en el Exterior):Servicio orientado a propietarios que han emigrado o residen fuera del Táchira, gestionando la entrega de llaves, inspecciones físicas, mantenimiento preventivo y cobro mensual de cánones de alquiler (Perfil de Instagram @inmobiliaria_verax).Esquema de Fuerza Comercial:Reclutamiento activo de agentes inmobiliarios y ejecutivos de ventas externos bajo modelo de comisión por captación y cierre (Ofertas de Trabajo en Computrabajo, Vecindary).3. Cobertura Geográfica en el Estado TáchiraZona / SectorTipo de Inmueble PredominantePuntos de Referencia y Ejemplos de CatálogoBarrio ObreroLocales comerciales, galpones urbanos y oficinasCalles 10 y 11, Carreras 19 a 23, adyacencias comerciales (Publicaciones de Inmobiliaria Verax).Pueblo Nuevo / La CastellanaApartamentos dúplex, residencias cerradasResidencias Sierra Azul, urbanizaciones residenciales de alta gama (Publicaciones de Inmobiliaria Verax).Santa Cecilia / Colinas de PirineosCasas unifamiliares, condominios horizontalesAvenidas principales cercanas a la ULA, sectores residenciales consolidados (Publicaciones de Inmobiliaria Verax).Caneyes / La ErmitaGalpones industriales, depósitosInstalaciones de 300 m² a 600 m² aptas para almacenamiento y logística pesada (Publicaciones de Inmobiliaria Verax).Palo Gordo / Táriba / CorderoCasas unifamiliares, parcelas y terrenosDesarrollos suburbanos en los municipios Cárdenas y Andrés Bello (Publicaciones de Inmobiliaria Verax).4. Identidad Visual, Paleta de Colores y Estilo GráficoEl sistema visual de la empresa está planteado con un criterio comercial directo, enfocado en el alto contraste, la lectura ágil en dispositivos móviles y el reconocimiento rápido de marca.┌────────────────────────────────────────────────────────────────────────┐
+│                        PALETA CROMÁTICA VERAX                         │
+├─────────────────┬─────────────────┬──────────────────┬─────────────────┤
+│ Azul Corp.      │ Rojo Alerta     │ Amarillo Acento  │ Blanco / Neutro │
+│ (Confianza/Base)│ (Venta/Acción)  │ (Oportunidad)    │ (Legibilidad)   │
+└─────────────────┴─────────────────┴──────────────────┴─────────────────┘
+A. Paleta de Colores Corporativa y JerarquíaAzul Corporativo / Azul Rey (Color Primario e Institucional):Función: Es la base visual del isotipo y de los encabezados/marcos institucionales.Objetivo psicológico: Proyectar estabilidad, seguridad legal y confianza en las transacciones de bienes raíces.Rojo / Naranja Saturado (Color de Conversión y Alertas):Función: Utilizado en cintillos y badges de estado de la propiedad ("EN VENTA", "EN ALQUILER", "BAJÓ DE PRECIO", "NUEVA CAPTACIÓN").Objetivo psicológico: Generar sentido de oportunidad y detener el scroll en redes sociales.Amarillo / Dorado Brillante (Color Secundario Promocional):Función: Resaltado de ofertas especiales ("Promo del Día", etiquetas de precio reducido, botones gráficos).Blanco Puro y Gris Antracita / Negro (Colores de Soporte):Función: Fondos para cajas de texto técnico, franjas inferiores con datos de contacto y tipografía con máximo contraste.B. Arquitectura de Marca y LogotipoIsotipo / Imagotipo: Construcción geométrica basada en el dibujo lineal o volumétrico de siluetas de casas, techos triangulares y estructuras arquitectónicas estilizadas.Tipografía de Marca: Familias Sans-Serif (Palo Seco) con trazos limpios y rectos (estilo Montserrat, Roboto o Helvética).Nombre de Marca: VERAX en mayúsculas sostenidas y peso Black / Bold.Descriptores: "INMOBILIARIA" o "SE ALQUILA Y VENDE C.A." en pesos Medium o Regular para equilibrar la composición.Aplicación: Marca de agua visible en la esquina superior o inferior de todas las fotografías del catálogo para evitar el plagio de captaciones por terceros.C. Composición de Piezas Publicitarias (Plantillas y Flyers Digitales)┌────────────────────────────────────────────────────────┐
+│  [ BANNER SUPERIOR: ESTADO / OPERACIÓN / UBICACIÓN ]   │
+├────────────────────────────────────────────────────────┤
+│                                                        │
+│                                                        │
+│               FOTOGRAFÍA PRINCIPAL                     │
+│          (Fachada / Sala / Cocina Equipada)            │
+│                                                        │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│  [ CINTILLO / BADGE: PRECIO / OPORTUNIDAD / METRAJE ]  │
+├────────────────────────────────────────────────────────┤
+│  LOGO VERAX | DATOS BARRIO OBRERO | WHATSAPP / CONTACTO│
+└────────────────────────────────────────────────────────┘
+Header / Cabecera: Franja superior sólida donde se indica claramente el tipo de inmueble y la zona (ej. Casa en Santa Cecilia, Apartamento en Pueblo Nuevo, Galpón en Caneyes).Cuerpo Central: Fotografía con iluminación natural y plano abierto que exhibe el ambiente más representativo de la propiedad.Pie de Flyer: Franja inferior con logotipo, dirección en Barrio Obrero y llamado a la acción con ícono de WhatsApp.D. Tratamiento Fotográfico y AudiovisualFormato Fotográfico: Tomas directas diurnas con lente gran angular, evitando saturaciones excesivas de edición para mostrar los acabados reales (cerámica, topes de granito, closets de madera, balcones).Formatos de Video / Reels: Video tours guiados en primera persona donde se recorre el inmueble desde el acceso principal hacia las áreas íntimas, acompañados de música de tendencia o locución comercial del agente inmobiliario.5. Estilo Editorial, Copywriting y Conversión de LeadsLa redacción de las publicaciones sigue una estructura técnica estandarizada mediante iconografía con emojis, permitiendo al usuario escanear los atributos en pocos segundos:Estructura Estándar del Copy:Gancho de Apertura: Estatus comercial en mayúsculas (ej. ¡NUEVA CAPTACIÓN EXCLUSIVA!, ¡PROMO DEL DÍA!, ¡BAJÓ DE PRECIO!).Ficha Técnica Estructurada:🏠 / 🏢 : Tipo de Inmueble y Régimen (Casa, Apartamento, Townhouse, Galpón, PH).🧭 / 📍 : Sector o Urbanización.📐 : Metros cuadrados totales y metros de construcción.🛏️ : Cantidad y distribución de habitaciones.🚿 : Número de baños completos y medios baños.🚗 : Puestos de estacionamiento (techados / descubiertos).🛋️ / 🍽️ / 🎛️ : Detalles de sala, comedor y cocina empotrada.💵 / 💰 : Precio de venta o canon mensual de arrendamiento y condiciones de contrato.Cierre y Llamado a la Acción (CTA): «Agenda tu cita 📍 Link de WhatsApp en nuestra Bio 📲».Bloque de Etiquetas (#): #inmobiliaria_verax, #SanCristobal, #Tachira, #BienesRaicesTachira, #PuebloNuevo, #BarrioObrero.6. Ecosistema Digital y Canales de Distribución                          CANALES DIGITALES VERAX
+                                     │
+     ┌───────────────────────────────┼───────────────────────────────┐
+     ▼                               ▼                               ▼
+Instagram Principal             Cuentas de Segmentación        Facebook & Directorios
+@inmobiliaria_verax             @verax.venta / @veraxalquiler  Página oficial, Grupos,
+(16.5K seg. / 1.88K posts)      (@veraxmerida histórico)       Cylex, Infoguia, Gelvez
+Instagram Principal: @inmobiliaria_verax (más de 16.500 seguidores y más de 1.885 publicaciones activas).Cuentas de Segmentación Operativa:@verax.venta: Catálogo exclusivo de inmuebles en venta (Facebook Inmobiliaria Verax).@veraxalquiler: Catálogo exclusivo de propiedades en arrendamiento.@veraxmerida: Cuenta satélite para captaciones en el estado Mérida.Facebook: Página de Inmobiliaria VERAX y Perfil de Inmobiliaria_Verax.Directorios Empresariales y Clasificados: Fichas activas en Cylex Venezuela, Infoguia Venezuela y Gelvez.7. Posicionamiento en el Mercado LocalUbicación Estratégica en Barrio Obrero: Su sede en la Carrera 20 con Calle 11 le permite operar en el epicentro comercial de San Cristóbal, con proximidad a notarías, registros, entidades bancarias y oficinas jurídicas.Entorno Competitivo: Comparte plaza con marcas de franquicia internacional consolidadas como RE/MAX Planet y RE/MAX Futuro, además de inmobiliarias independientes regionales.Estrategia Diferenciadora: Se apoya en una alta rotación de inventario promocionado diariamente en redes sociales, una línea gráfica estandarizada de fácil reconocimiento y la derivación inmediata de tráfico hacia canales privados de WhatsApp para la atención de citas.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1fdd2836-ad5e-43f9-9de0-9e2eed7c4b03).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +56,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
