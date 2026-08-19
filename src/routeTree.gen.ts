@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as NosotrosRouteImport } from './routes/nosotros'
 import { Route as PropiedadesRouteImport } from './routes/propiedades'
 import { Route as ServiciosRouteImport } from './routes/servicios'
@@ -18,6 +19,11 @@ import { Route as ZonasRouteImport } from './routes/zonas'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactoRoute = ContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NosotrosRoute = NosotrosRouteImport.update({
@@ -43,6 +49,7 @@ const ZonasRoute = ZonasRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contacto': typeof ContactoRoute
   '/nosotros': typeof NosotrosRoute
   '/propiedades': typeof PropiedadesRoute
   '/servicios': typeof ServiciosRoute
@@ -50,6 +57,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contacto': typeof ContactoRoute
   '/nosotros': typeof NosotrosRoute
   '/propiedades': typeof PropiedadesRoute
   '/servicios': typeof ServiciosRoute
@@ -58,6 +66,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contacto': typeof ContactoRoute
   '/nosotros': typeof NosotrosRoute
   '/propiedades': typeof PropiedadesRoute
   '/servicios': typeof ServiciosRoute
@@ -65,14 +74,23 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/nosotros' | '/propiedades' | '/servicios' | '/zonas'
+  fullPaths:
+    '/' | '/contacto' | '/nosotros' | '/propiedades' | '/servicios' | '/zonas'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/nosotros' | '/propiedades' | '/servicios' | '/zonas'
-  id: '__root__' | '/' | '/nosotros' | '/propiedades' | '/servicios' | '/zonas'
+  to: '/' | '/contacto' | '/nosotros' | '/propiedades' | '/servicios' | '/zonas'
+  id:
+    | '__root__'
+    | '/'
+    | '/contacto'
+    | '/nosotros'
+    | '/propiedades'
+    | '/servicios'
+    | '/zonas'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactoRoute: typeof ContactoRoute
   NosotrosRoute: typeof NosotrosRoute
   PropiedadesRoute: typeof PropiedadesRoute
   ServiciosRoute: typeof ServiciosRoute
@@ -86,6 +104,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contacto': {
+      id: '/contacto'
+      path: '/contacto'
+      fullPath: '/contacto'
+      preLoaderRoute: typeof ContactoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/nosotros': {
@@ -121,6 +146,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactoRoute: ContactoRoute,
   NosotrosRoute: NosotrosRoute,
   PropiedadesRoute: PropiedadesRoute,
   ServiciosRoute: ServiciosRoute,
