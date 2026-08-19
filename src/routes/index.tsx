@@ -76,10 +76,10 @@ function Index() {
           </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+        <div className="grid gap-4 sm:grid-cols-2">
           <PlaceholderImage label="Fachada residencial destacada" ratio="4 / 3" watermark />
           <PlaceholderImage label="Interior de apartamento" ratio="4 / 3" watermark />
-          <div className="rounded-3xl bg-brand p-6 text-brand-foreground sm:col-span-2 lg:col-span-1">
+          <div className="rounded-3xl bg-brand p-6 text-brand-foreground sm:col-span-2">
             <p className="font-display text-3xl font-black">{company.followers}</p>
             <p className="mt-1 text-sm opacity-80">
               seguidores en {company.instagram} y más de {company.posts} publicaciones activas.
