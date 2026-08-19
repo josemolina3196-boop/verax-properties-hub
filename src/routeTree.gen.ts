@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as PropiedadesRouteImport } from './routes/propiedades'
 import { Route as ServiciosRouteImport } from './routes/servicios'
+import { Route as ZonasRouteImport } from './routes/zonas'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -28,35 +29,44 @@ const ServiciosRoute = ServiciosRouteImport.update({
   path: '/servicios',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ZonasRoute = ZonasRouteImport.update({
+  id: '/zonas',
+  path: '/zonas',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/propiedades': typeof PropiedadesRoute
   '/servicios': typeof ServiciosRoute
+  '/zonas': typeof ZonasRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/propiedades': typeof PropiedadesRoute
   '/servicios': typeof ServiciosRoute
+  '/zonas': typeof ZonasRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/propiedades': typeof PropiedadesRoute
   '/servicios': typeof ServiciosRoute
+  '/zonas': typeof ZonasRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/propiedades' | '/servicios'
+  fullPaths: '/' | '/propiedades' | '/servicios' | '/zonas'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/propiedades' | '/servicios'
-  id: '__root__' | '/' | '/propiedades' | '/servicios'
+  to: '/' | '/propiedades' | '/servicios' | '/zonas'
+  id: '__root__' | '/' | '/propiedades' | '/servicios' | '/zonas'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   PropiedadesRoute: typeof PropiedadesRoute
   ServiciosRoute: typeof ServiciosRoute
+  ZonasRoute: typeof ZonasRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +92,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/zonas': {
+      id: '/zonas'
+      path: '/zonas'
+      fullPath: '/zonas'
+      preLoaderRoute: typeof ZonasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,6 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   PropiedadesRoute: PropiedadesRoute,
   ServiciosRoute: ServiciosRoute,
+  ZonasRoute: ZonasRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
