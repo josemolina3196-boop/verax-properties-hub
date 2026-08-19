@@ -44,7 +44,7 @@ function Index() {
         <div className="absolute inset-0">
           <PlaceholderImage
             label="Fotografía principal del inmueble destacado"
-            ratio="16 / 9"
+            ratio="auto"
             tone="dark"
             className="h-full rounded-none border-0"
           />
