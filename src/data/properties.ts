@@ -25,6 +25,7 @@ export interface Property {
   bathrooms?: number;
   parking?: number;
   price: number;
+  advisorId: string;
   status: PropertyStatus;
   highlights: string[];
   featured?: boolean;
@@ -56,6 +57,7 @@ export const PROPERTY_TYPES: PropertyType[] = [
 export const properties: Property[] = [
   {
     id: "vx-01",
+    advisorId: "gerardo-vera",
     code: "VX-1042",
     title: "Apartamento dúplex en Residencias Sierra Azul",
     type: "Apartamento",
@@ -74,6 +76,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-02",
+    advisorId: "maria-fernanda-rangel",
     code: "VX-1048",
     title: "Casa unifamiliar en Santa Cecilia",
     type: "Casa",
@@ -92,6 +95,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-03",
+    advisorId: "jose-luis-contreras",
     code: "VX-1055",
     title: "Galpón industrial con acceso para gandolas",
     type: "Galpón",
@@ -108,6 +112,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-04",
+    advisorId: "jose-luis-contreras",
     code: "VX-1061",
     title: "Local comercial en la Carrera 20",
     type: "Local",
@@ -123,6 +128,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-05",
+    advisorId: "maria-fernanda-rangel",
     code: "VX-1067",
     title: "Townhouse en conjunto cerrado La Castellana",
     type: "Townhouse",
@@ -140,6 +146,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-06",
+    advisorId: "gerardo-vera",
     code: "VX-1072",
     title: "Penthouse dúplex con vista panorámica",
     type: "Penthouse",
@@ -157,6 +164,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-07",
+    advisorId: "andreina-parra",
     code: "VX-1080",
     title: "Casa en condominio horizontal Colinas de Pirineos",
     type: "Casa",
@@ -174,6 +182,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-08",
+    advisorId: "jose-luis-contreras",
     code: "VX-1085",
     title: "Depósito logístico en La Ermita",
     type: "Galpón",
@@ -189,6 +198,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-09",
+    advisorId: "andreina-parra",
     code: "VX-1091",
     title: "Apartamento familiar en Barrio Obrero",
     type: "Apartamento",
@@ -206,6 +216,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-10",
+    advisorId: "rafael-moreno",
     code: "VX-1096",
     title: "Parcela residencial en Palo Gordo",
     type: "Terreno",
@@ -219,6 +230,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-11",
+    advisorId: "daniela-suarez",
     code: "VX-1103",
     title: "Casa campestre en Táriba",
     type: "Casa",
@@ -236,6 +248,7 @@ export const properties: Property[] = [
   },
   {
     id: "vx-12",
+    advisorId: "rafael-moreno",
     code: "VX-1110",
     title: "Terreno comercial en Cordero",
     type: "Terreno",
