@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Search, X } from "lucide-react";
 import { useMemo, useState } from "react";
 
 import { PropertyCard } from "@/components/PropertyCard";
 import { SectionHeading } from "@/components/SectionHeading";
+import { advisorOf } from "@/data/advisors";
 import { PROPERTY_TYPES, ZONES, properties, type Operation, type PropertyType } from "@/data/properties";
 
 export const Route = createFileRoute("/propiedades")({
@@ -32,20 +34,34 @@ type TypeFilter = PropertyType | "todos";
 type ZoneFilter = string;
 
 function PropertiesPage() {
+  const [query, setQuery] = useState("");
   const [operation, setOperation] = useState<OperationFilter>("todas");
   const [type, setType] = useState<TypeFilter>("todos");
   const [zone, setZone] = useState<ZoneFilter>("todas");
 
-  const results = useMemo(
-    () =>
-      properties.filter(
-        (p) =>
-          (operation === "todas" || p.operation === operation) &&
-          (type === "todos" || p.type === type) &&
-          (zone === "todas" || p.zone === zone),
-      ),
-    [operation, type, zone],
-  );
+  const results = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return properties.filter((p) => {
+      if (operation !== "todas" && p.operation !== operation) return false;
+      if (type !== "todos" && p.type !== type) return false;
+      if (zone !== "todas" && p.zone !== zone) return false;
+      if (!q) return true;
+      const advisor = advisorOf(p);
+      const haystack = [
+        p.code,
+        p.title,
+        p.zone,
+        p.type,
+        p.reference,
+        p.operation,
+        advisor?.name ?? "",
+        ...p.highlights,
+      ]
+        .join(" ")
+        .toLowerCase();
+      return q.split(/\s+/).every((token) => haystack.includes(token));
+    });
+  }, [query, operation, type, zone]);
 
   return (
     <div className="mx-auto max-w-7xl space-y-10 px-4 py-8 sm:px-6 lg:px-8">
