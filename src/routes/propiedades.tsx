@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Search, X } from "lucide-react";
 import { useMemo, useState } from "react";
 
 import { PropertyCard } from "@/components/PropertyCard";
 import { SectionHeading } from "@/components/SectionHeading";
+import { advisorOf } from "@/data/advisors";
 import { PROPERTY_TYPES, ZONES, properties, type Operation, type PropertyType } from "@/data/properties";
 
 export const Route = createFileRoute("/propiedades")({
@@ -32,20 +34,34 @@ type TypeFilter = PropertyType | "todos";
 type ZoneFilter = string;
 
 function PropertiesPage() {
+  const [query, setQuery] = useState("");
   const [operation, setOperation] = useState<OperationFilter>("todas");
   const [type, setType] = useState<TypeFilter>("todos");
   const [zone, setZone] = useState<ZoneFilter>("todas");
 
-  const results = useMemo(
-    () =>
-      properties.filter(
-        (p) =>
-          (operation === "todas" || p.operation === operation) &&
-          (type === "todos" || p.type === type) &&
-          (zone === "todas" || p.zone === zone),
-      ),
-    [operation, type, zone],
-  );
+  const results = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return properties.filter((p) => {
+      if (operation !== "todas" && p.operation !== operation) return false;
+      if (type !== "todos" && p.type !== type) return false;
+      if (zone !== "todas" && p.zone !== zone) return false;
+      if (!q) return true;
+      const advisor = advisorOf(p);
+      const haystack = [
+        p.code,
+        p.title,
+        p.zone,
+        p.type,
+        p.reference,
+        p.operation,
+        advisor?.name ?? "",
+        ...p.highlights,
+      ]
+        .join(" ")
+        .toLowerCase();
+      return q.split(/\s+/).every((token) => haystack.includes(token));
+    });
+  }, [query, operation, type, zone]);
 
   return (
     <div className="mx-auto max-w-7xl space-y-10 px-4 py-8 sm:px-6 lg:px-8">
@@ -60,6 +76,33 @@ function PropertiesPage() {
 
       <section aria-label="Filtros del catálogo" className="rounded-2xl border border-border bg-surface p-4 sm:p-6">
         <div className="space-y-4">
+          <FilterRow label="Búsqueda">
+            <div className="relative w-full min-w-0">
+              <Search
+                className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
+                aria-hidden="true"
+              />
+              <input
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Código, zona, tipo, asesor o palabra clave…"
+                aria-label="Buscar inmuebles"
+                className="w-full rounded-full border border-border bg-muted py-2.5 pl-10 pr-10 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-brand focus:bg-surface"
+              />
+              {query ? (
+                <button
+                  type="button"
+                  onClick={() => setQuery("")}
+                  aria-label="Limpiar búsqueda"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <X className="h-4 w-4" aria-hidden="true" />
+                </button>
+              ) : null}
+            </div>
+          </FilterRow>
+
           <FilterRow label="Operación">
             {(["todas", "venta", "alquiler"] as OperationFilter[]).map((value) => (
               <Chip key={value} active={operation === value} onClick={() => setOperation(value)}>

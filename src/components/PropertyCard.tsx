@@ -1,6 +1,8 @@
+import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Bath, BedDouble, Car, Ruler } from "lucide-react";
 
 import { PlaceholderImage } from "@/components/PlaceholderImage";
+import { advisorOf } from "@/data/advisors";
 import { whatsappLink } from "@/data/company";
 import { formatPrice, type Property } from "@/data/properties";
 
@@ -13,6 +15,7 @@ const statusStyles: Record<Property["status"], string> = {
 
 export function PropertyCard({ property }: { property: Property }) {
   const operationLabel = property.operation === "venta" ? "EN VENTA" : "EN ALQUILER";
+  const advisor = advisorOf(property);
 
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-border bg-surface">
@@ -57,6 +60,17 @@ export function PropertyCard({ property }: { property: Property }) {
             </li>
           ))}
         </ul>
+
+        {advisor ? (
+          <Link
+            to="/asesores/$advisorId"
+            params={{ advisorId: advisor.id }}
+            className="mt-4 inline-flex min-w-0 items-center gap-2 text-xs font-semibold text-brand hover:underline"
+          >
+            <span className="truncate">Asesor: {advisor.name}</span>
+            <ArrowUpRight className="h-3 w-3 shrink-0" aria-hidden="true" />
+          </Link>
+        ) : null}
 
         <div className="mt-5 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 border-t border-border pt-4">
           <div className="min-w-0">
