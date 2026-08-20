@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { AdvisorCard } from "@/components/AdvisorCard";
 import { ContactStrip } from "@/components/ContactStrip";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { SectionHeading } from "@/components/SectionHeading";
+import { advisors } from "@/data/advisors";
 import { addressLine, company } from "@/data/company";
 
 export const Route = createFileRoute("/nosotros")({
@@ -91,6 +93,21 @@ function AboutPage() {
               <h3 className="mt-3 font-display text-base font-bold uppercase text-foreground">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="equipo">
+        <h2 className="font-display text-2xl font-black uppercase leading-tight sm:text-3xl">
+          Equipo de asesores
+        </h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          Cada captación tiene un asesor responsable. Entra a su perfil para ver la cartera de inmuebles que
+          gestiona y escribirle directamente.
+        </p>
+        <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+          {advisors.map((advisor) => (
+            <AdvisorCard key={advisor.id} advisor={advisor} />
           ))}
         </div>
       </section>
