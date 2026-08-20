@@ -76,6 +76,33 @@ function PropertiesPage() {
 
       <section aria-label="Filtros del catálogo" className="rounded-2xl border border-border bg-surface p-4 sm:p-6">
         <div className="space-y-4">
+          <FilterRow label="Búsqueda">
+            <div className="relative w-full min-w-0">
+              <Search
+                className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
+                aria-hidden="true"
+              />
+              <input
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Código, zona, tipo, asesor o palabra clave…"
+                aria-label="Buscar inmuebles"
+                className="w-full rounded-full border border-border bg-muted py-2.5 pl-10 pr-10 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-brand focus:bg-surface"
+              />
+              {query ? (
+                <button
+                  type="button"
+                  onClick={() => setQuery("")}
+                  aria-label="Limpiar búsqueda"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <X className="h-4 w-4" aria-hidden="true" />
+                </button>
+              ) : null}
+            </div>
+          </FilterRow>
+
           <FilterRow label="Operación">
             {(["todas", "venta", "alquiler"] as OperationFilter[]).map((value) => (
               <Chip key={value} active={operation === value} onClick={() => setOperation(value)}>
